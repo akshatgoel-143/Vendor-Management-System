@@ -48,7 +48,7 @@ Then enter the Username.
     
 Then Enter the e-mail Address, Password and the Confirm Password.
 
-# Admiin Pannel
+# Admin Pannel
 
 Run the server:
 
