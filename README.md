@@ -110,3 +110,14 @@ Update Acknowledgment
 (This endpoint will update acknowledgment_date and trigger the recalculation of average_response_time.)
 
     $ POST /api/purchase_orders/{po_id}/acknowledge
+
+# Errors
+The GitHub Readme API uses standard HTTP status codes to indicate the success or failure of a request. In case of an error, additional information may be provided in the response body.
+
+#### Common error codes include:
+
+400 Bad Request: Invalid request parameters.
+401 Unauthorized: Authentication failure.
+404 Not Found: The specified resource does not exist.
+403 Forbidden: Access to the requested resource is forbidden.
+500 Internal Server Error: An unexpected error occurred on the server.
