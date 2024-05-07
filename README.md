@@ -106,7 +106,7 @@ Retrieve a vendor's performance metrics
 
     $ GET /api/vendors/{vendor_id}/performance
 
-Update Acknowledgment Endpoint:
+Update Acknowledgment
 (This endpoint will update acknowledgment_date and trigger the recalculation of average_response_time.)
 
     $ POST /api/purchase_orders/{po_id}/acknowledge
