@@ -102,11 +102,13 @@ Delete a purchase order
 
 ### Vendor Performance Evaluation:
 Retrieve a vendor's performance metrics
+
 (on_time_delivery_rate, quality_rating_avg, average_response_time, and fulfillment_rate along with th vendor ID)
 
     $ GET /api/vendors/{vendor_id}/performance
 
 Update Acknowledgment
+
 (This endpoint will update acknowledgment_date and trigger the recalculation of average_response_time.)
 
     $ POST /api/purchase_orders/{po_id}/acknowledge
@@ -117,7 +119,12 @@ The GitHub Readme API uses standard HTTP status codes to indicate the success or
 #### Common error codes include:
 
 400 Bad Request: Invalid request parameters.
+
 401 Unauthorized: Authentication failure.
+
 404 Not Found: The specified resource does not exist.
+
 403 Forbidden: Access to the requested resource is forbidden.
+
 500 Internal Server Error: An unexpected error occurred on the server.
+
