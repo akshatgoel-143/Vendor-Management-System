@@ -55,3 +55,25 @@ Run the server:
     $ python manage.py runserver
 
 And navigate to http://127.0.0.1:8000/admin/
+
+# API Endpoints
+
+### Vendor Profile Management:
+Create a new vendor
+
+    $ POST /api/vendors/
+    
+List all vendors
+
+    $ GET /api/vendors/
+    
+Retrieve a specific vendor's details
+
+    $ GET /api/vendors/{vendor_id}/
+
+Update a vendor's details
+
+    $ PUT /api/vendors/{vendor_id}/
+    
+Delete a vendor
+    $ DELETE /api/vendors/{vendor_id}/
