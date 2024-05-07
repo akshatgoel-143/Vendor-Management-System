@@ -76,4 +76,37 @@ Update a vendor's details
     $ PUT /api/vendors/{vendor_id}/
     
 Delete a vendor
+
     $ DELETE /api/vendors/{vendor_id}/
+
+### Purchase Order Tracking
+Create a purchase order
+
+    $ POST /api/purchase_orders/
+
+List all purchase orders with an option to filter by vendor
+
+    $ GET /api/purchase_orders/
+
+Retrieve details of a specific purchase order
+
+    $ GET /api/purchase_orders/{po_id}/
+
+Update a purchase order
+
+    $ PUT /api/purchase_orders/{po_id}/
+
+Delete a purchase order
+
+    $ DELETE /api/purchase_orders/{po_id}/
+
+### Vendor Performance Evaluation:
+Retrieve a vendor's performance metrics
+(on_time_delivery_rate, quality_rating_avg, average_response_time, and fulfillment_rate along with th vendor ID)
+
+    $ GET /api/vendors/{vendor_id}/performance
+
+Update Acknowledgment Endpoint:
+(This endpoint will update acknowledgment_date and trigger the recalculation of average_response_time.)
+
+    $ POST /api/purchase_orders/{po_id}/acknowledge
